@@ -1,0 +1,668 @@
+[gd_scene format=2]
+
+[node name="Interface" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="GridContainer" type="GridContainer" parent="."]
+margin_top = 29.0
+margin_right = 1025.0
+margin_bottom = 601.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 8
+
+[node name="LineEdit1" type="LineEdit" parent="GridContainer"]
+margin_right = 125.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit2" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_right = 254.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit3" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_right = 383.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit4" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_right = 512.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit5" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_right = 641.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit6" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_right = 769.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit7" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_right = 897.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit8" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_right = 1025.0
+margin_bottom = 68.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit9" type="LineEdit" parent="GridContainer"]
+margin_top = 72.0
+margin_right = 125.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit10" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 72.0
+margin_right = 254.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit11" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 72.0
+margin_right = 383.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit12" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 72.0
+margin_right = 512.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit13" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 72.0
+margin_right = 641.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit14" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 72.0
+margin_right = 769.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit15" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 72.0
+margin_right = 897.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit16" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 72.0
+margin_right = 1025.0
+margin_bottom = 140.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit17" type="LineEdit" parent="GridContainer"]
+margin_top = 144.0
+margin_right = 125.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit18" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 144.0
+margin_right = 254.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit19" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 144.0
+margin_right = 383.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit20" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 144.0
+margin_right = 512.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit21" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 144.0
+margin_right = 641.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit22" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 144.0
+margin_right = 769.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit23" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 144.0
+margin_right = 897.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit24" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 144.0
+margin_right = 1025.0
+margin_bottom = 212.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit25" type="LineEdit" parent="GridContainer"]
+margin_top = 216.0
+margin_right = 125.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit26" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 216.0
+margin_right = 254.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit27" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 216.0
+margin_right = 383.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit28" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 216.0
+margin_right = 512.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit29" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 216.0
+margin_right = 641.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit30" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 216.0
+margin_right = 769.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit31" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 216.0
+margin_right = 897.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit32" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 216.0
+margin_right = 1025.0
+margin_bottom = 284.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit33" type="LineEdit" parent="GridContainer"]
+margin_top = 288.0
+margin_right = 125.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit34" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 288.0
+margin_right = 254.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit35" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 288.0
+margin_right = 383.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit36" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 288.0
+margin_right = 512.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit37" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 288.0
+margin_right = 641.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit38" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 288.0
+margin_right = 769.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit39" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 288.0
+margin_right = 897.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit40" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 288.0
+margin_right = 1025.0
+margin_bottom = 356.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit41" type="LineEdit" parent="GridContainer"]
+margin_top = 360.0
+margin_right = 125.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit42" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 360.0
+margin_right = 254.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit43" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 360.0
+margin_right = 383.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit44" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 360.0
+margin_right = 512.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit45" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 360.0
+margin_right = 641.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit46" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 360.0
+margin_right = 769.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit47" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 360.0
+margin_right = 897.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit48" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 360.0
+margin_right = 1025.0
+margin_bottom = 428.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit49" type="LineEdit" parent="GridContainer"]
+margin_top = 432.0
+margin_right = 125.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit50" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 432.0
+margin_right = 254.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit51" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 432.0
+margin_right = 383.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit52" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 432.0
+margin_right = 512.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit53" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 432.0
+margin_right = 641.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit54" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 432.0
+margin_right = 769.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit55" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 432.0
+margin_right = 897.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit56" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 432.0
+margin_right = 1025.0
+margin_bottom = 500.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit57" type="LineEdit" parent="GridContainer"]
+margin_top = 504.0
+margin_right = 125.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit58" type="LineEdit" parent="GridContainer"]
+margin_left = 129.0
+margin_top = 504.0
+margin_right = 254.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit59" type="LineEdit" parent="GridContainer"]
+margin_left = 258.0
+margin_top = 504.0
+margin_right = 383.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit60" type="LineEdit" parent="GridContainer"]
+margin_left = 387.0
+margin_top = 504.0
+margin_right = 512.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit61" type="LineEdit" parent="GridContainer"]
+margin_left = 516.0
+margin_top = 504.0
+margin_right = 641.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit62" type="LineEdit" parent="GridContainer"]
+margin_left = 645.0
+margin_top = 504.0
+margin_right = 769.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit63" type="LineEdit" parent="GridContainer"]
+margin_left = 773.0
+margin_top = 504.0
+margin_right = 897.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="LineEdit64" type="LineEdit" parent="GridContainer"]
+margin_left = 901.0
+margin_top = 504.0
+margin_right = 1025.0
+margin_bottom = 572.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+align = 1
+max_length = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 1022.0
+margin_bottom = 27.0
+
+[node name="back" type="Button" parent="HBoxContainer"]
+margin_right = 42.0
+margin_bottom = 27.0
+text = "Back"
+
+[node name="next" type="Button" parent="HBoxContainer"]
+margin_left = 46.0
+margin_right = 88.0
+margin_bottom = 27.0
+text = "Next"
+
+[node name="save" type="Button" parent="HBoxContainer"]
+margin_left = 92.0
+margin_right = 133.0
+margin_bottom = 27.0
+text = "Save"
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+margin_left = 137.0
+margin_right = 1022.0
+margin_bottom = 27.0
+size_flags_horizontal = 3
+size_flags_vertical = 7
+text = "Huffman Table"
+align = 1
+valign = 1
