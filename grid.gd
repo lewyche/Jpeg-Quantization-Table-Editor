@@ -1,6 +1,7 @@
 extends GridContainer
 
 onready var interface = get_node("../../../")
+onready var texture = interface.get_node("HBoxContainer/TextureRect")
 
 var quantization_tables = []
 var iterator = 0
@@ -35,3 +36,7 @@ func _on_next_pressed():
 
 func _on_save_pressed():
 	interface.write_file(quantization_tables)
+
+
+func _on_lenim_pressed():
+	texture.import_lenin()

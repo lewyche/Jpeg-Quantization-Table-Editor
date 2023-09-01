@@ -16,3 +16,5 @@ func _ready():
 func _on_LineEdit_text_changed(new_text):
 	print(name_num)
 	grid.edit_table(int(name_num), new_text)
+
+

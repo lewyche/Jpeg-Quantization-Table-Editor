@@ -7,7 +7,7 @@ var hex = ""
 var quant_positions = []
 
 onready var grid = get_node("HBoxContainer/VBoxContainer/grid")
-
+onready var texture = get_node("HBoxContainer/TextureRect")
 
 
 func _ready():
@@ -81,7 +81,8 @@ func convert_to_hex():
 		arr.append(curr_hex.hex_to_int())
 		i += 2
 	return arr
-	
+
+
 
 func write_file(quantization_tables):
 	for i in range(quantization_tables.size()):
@@ -92,6 +93,10 @@ func write_file(quantization_tables):
 	
 	var pool_byte = convert_to_hex()
 	f.store_buffer(pool_byte)
+	
+	f.close()
+	
+	texture.import_image(jpg_file)
 
 func open_file():
 	var f = File.new()
