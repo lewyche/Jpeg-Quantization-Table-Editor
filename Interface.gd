@@ -63,7 +63,8 @@ func write_to_hex(table, index):	#convert and merge hex array into hex string
 	var i = quant_positions[index]	#position in hex string
 	var j = 0	#position in hex array
 	var end = i + 126
-	while i <= end && j < table.size():
+	while i < end && j < table.size():
+		print(table[j].length())
 		hex[i] = table[j][0]
 		hex[i + 1] = table[j][1]
 		i += 2
@@ -75,7 +76,7 @@ func convert_to_hex():
 	var i = 0
 	var arr = [PoolByteArray()]
 	
-	while i + 1 < hex.size():
+	while i + 1 < hex.length():
 		curr_hex = "0x" + hex[i] + hex[i + 1]
 		arr.append(curr_hex.hex_to_int())
 		i += 2

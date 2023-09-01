@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Interface.gd" type="Script" id=1]
 [ext_resource path="res://grid.gd" type="Script" id=2]
-[ext_resource path="res://sogay.jpg" type="Texture" id=3]
+[ext_resource path="res://sogay(1).jpg" type="Texture" id=3]
+[ext_resource path="res://LineEdit.tscn" type="PackedScene" id=4]
 
 [node name="Interface" type="Control"]
 anchor_right = 1.0
@@ -63,629 +64,357 @@ size_flags_vertical = 3
 columns = 8
 script = ExtResource( 2 )
 
-[node name="LineEdit1" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
-margin_right = 58.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
+[node name="LineEdit1" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 
-[node name="LineEdit2" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit2" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_right = 120.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit3" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit3" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_right = 182.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit4" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit4" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_right = 244.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit5" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit5" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_right = 306.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit6" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit6" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_right = 368.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit7" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit7" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_right = 430.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit8" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit8" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_right = 492.0
-margin_bottom = 69.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit9" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit9" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 73.0
-margin_right = 58.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit10" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit10" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 73.0
 margin_right = 120.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit11" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit11" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 73.0
 margin_right = 182.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit12" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit12" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 73.0
 margin_right = 244.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit13" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit13" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 73.0
 margin_right = 306.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit14" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit14" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 73.0
 margin_right = 368.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit15" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit15" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 73.0
 margin_right = 430.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit16" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit16" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 73.0
 margin_right = 492.0
 margin_bottom = 142.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit17" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit17" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 146.0
-margin_right = 58.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit18" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit18" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 146.0
 margin_right = 120.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit19" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit19" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 146.0
 margin_right = 182.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit20" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit20" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 146.0
 margin_right = 244.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit21" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit21" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 146.0
 margin_right = 306.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit22" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit22" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 146.0
 margin_right = 368.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit23" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit23" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 146.0
 margin_right = 430.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit24" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit24" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 146.0
 margin_right = 492.0
 margin_bottom = 215.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit25" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit25" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 219.0
-margin_right = 58.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit26" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit26" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 219.0
 margin_right = 120.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit27" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit27" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 219.0
 margin_right = 182.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit28" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit28" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 219.0
 margin_right = 244.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit29" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit29" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 219.0
 margin_right = 306.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit30" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit30" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 219.0
 margin_right = 368.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit31" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit31" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 219.0
 margin_right = 430.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit32" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit32" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 219.0
 margin_right = 492.0
 margin_bottom = 287.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit33" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit33" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 291.0
-margin_right = 58.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit34" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit34" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 291.0
 margin_right = 120.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit35" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit35" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 291.0
 margin_right = 182.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit36" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit36" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 291.0
 margin_right = 244.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit37" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit37" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 291.0
 margin_right = 306.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit38" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit38" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 291.0
 margin_right = 368.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit39" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit39" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 291.0
 margin_right = 430.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit40" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit40" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 291.0
 margin_right = 492.0
 margin_bottom = 359.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit41" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit41" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 363.0
-margin_right = 58.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit42" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit42" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 363.0
 margin_right = 120.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit43" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit43" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 363.0
 margin_right = 182.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit44" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit44" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 363.0
 margin_right = 244.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit45" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit45" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 363.0
 margin_right = 306.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit46" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit46" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 363.0
 margin_right = 368.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit47" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit47" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 363.0
 margin_right = 430.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit48" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit48" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 363.0
 margin_right = 492.0
 margin_bottom = 431.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit49" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit49" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 435.0
-margin_right = 58.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit50" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit50" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 435.0
 margin_right = 120.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit51" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit51" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 435.0
 margin_right = 182.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit52" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit52" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 435.0
 margin_right = 244.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit53" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit53" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 435.0
 margin_right = 306.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit54" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit54" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 435.0
 margin_right = 368.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit55" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit55" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 435.0
 margin_right = 430.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit56" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit56" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 435.0
 margin_right = 492.0
 margin_bottom = 503.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit57" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit57" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_top = 507.0
-margin_right = 58.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit58" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit58" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 62.0
 margin_top = 507.0
 margin_right = 120.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit59" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit59" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 124.0
 margin_top = 507.0
 margin_right = 182.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit60" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit60" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 186.0
 margin_top = 507.0
 margin_right = 244.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit61" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit61" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 248.0
 margin_top = 507.0
 margin_right = 306.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit62" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit62" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 310.0
 margin_top = 507.0
 margin_right = 368.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit63" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit63" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 372.0
 margin_top = 507.0
 margin_right = 430.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
-[node name="LineEdit64" type="LineEdit" parent="HBoxContainer/VBoxContainer/grid"]
+[node name="LineEdit64" parent="HBoxContainer/VBoxContainer/grid" instance=ExtResource( 4 )]
 margin_left = 434.0
 margin_top = 507.0
 margin_right = 492.0
 margin_bottom = 575.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-align = 1
-max_length = 2
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
 margin_left = 496.0

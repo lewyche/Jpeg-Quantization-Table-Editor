@@ -9,6 +9,9 @@ func display_table(table):
 	for i in range(table.size()):
 		get_node("LineEdit" + str(i + 1)).text = str(table[i])
 
+func edit_table(element, txt):
+	quantization_tables[iterator][element - 1] = txt
+
 func set_tables(quant):
 	quantization_tables = quant
 	print(quantization_tables.size())
