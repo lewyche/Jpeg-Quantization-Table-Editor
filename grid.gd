@@ -1,6 +1,9 @@
 extends GridContainer
 
+onready var interface = get_node("../../../")
+
 var quantization_tables = []
+var iterator = 0
 
 func display_table(table):
 	for i in range(table.size()):
@@ -8,7 +11,24 @@ func display_table(table):
 
 func set_tables(quant):
 	quantization_tables = quant
-	display_table(quantization_tables[0])
+	print(quantization_tables.size())
+	display_table(quantization_tables[iterator])
 
 func _ready():
 	pass # Replace with function body.
+
+
+func _on_back_pressed():
+	if iterator > 0:
+		iterator -= 1
+		display_table(quantization_tables[iterator])
+
+
+func _on_next_pressed():
+	if iterator < quantization_tables.size() - 1:
+		iterator += 1
+		display_table(quantization_tables[iterator])
+
+
+func _on_save_pressed():
+	interface.write_file(quantization_tables)

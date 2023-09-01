@@ -1,14 +1,20 @@
 extends Control
 
-var jpg_file = "res://sogay.jpg"		#TODO: change this later
+var jpg_file = "res://sogay(1).jpg"		#TODO: change this later
+
+var hex = ""
+
+var quant_positions = []
 
 onready var grid = get_node("HBoxContainer/VBoxContainer/grid")
+
+
 
 func _ready():
 	open_file()
 
 func process_bytes(byte_array):
-	var hex = byte_array.hex_encode()
+	hex = byte_array.hex_encode()
 	
 	var restart_interval = false
 	var curr_hex = ""
@@ -20,6 +26,7 @@ func process_bytes(byte_array):
 	var check_for_tables = false
 	while restart_interval == false && i + 1 < hex.length():
 		curr_hex = hex[i] + hex[i + 1]
+		
 		
 		if curr_hex == "ff":
 			i += 2	#go to next hex
@@ -36,70 +43,59 @@ func process_bytes(byte_array):
 				
 				i += 2 #skip destination marker
 				
-				var end = i + 128
+				var end = i + 126
 				
-				while i < end && i + 1 < hex.length():
+				while i <= end && i + 1 < hex.length():
 					quant_hex = hex[i] + hex[i + 1]
-					print(quant_hex)
+					
+					if i == end - 126:	#if start of table
+						quant_positions.append(i)
+						
 					new_quant.append(quant_hex)
 					i += 2
+				i = end	#prevent overshoot of iterator
 				quantization_tables.append(new_quant)
 		i += 2
 	grid.set_tables(quantization_tables)
-#		curr_hex = hex[i] + hex[i + 1]
-#
-#		if check_for_tables == true:
-#
-#			check_for_tables = false
-#
-#			var table_hex = ""
-#
-#
-#			if curr_hex == "C4" || curr_hex == "c4":	#Huffman Table
-#				var new_huff = [i + 1]	#add index of huffman table to first element
-#				var j = i + 1
-#
-#				print("huff!")
-#
-#				while table_hex != "FF" && j + 1 < hex.length():
-#
-#					table_hex = hex[j] + hex[j + 1]
-#					print(table_hex)
-#					new_huff.append(table_hex)
-#					j += 2
-#					i = j
-#
-#				huffman_tables.append(new_huff)
-#			elif curr_hex == "DB" || curr_hex == "db":	#Quantization Table
-#				var new_quant = [i + 1]	 #add index of huffman table to first element
-#				var j = i + 1
-#
-#				print(i + 1)
-#
-#				print("quant!")
-#
-#				while table_hex != "FF" && j + 1 < hex.length():
-#
-#					table_hex = hex[j] + hex[j + 1]
-#					print(table_hex)
-#					new_quant.append(table_hex)
-#
-#					quantization_tables.append(new_quant)
-#					j += 2
-#					i = j
-#
-#			elif curr_hex == "DD" || curr_hex == "dd":
-#				restart_interval = true
-#
-#		if curr_hex == "FF" || curr_hex == "ff":
-#			check_for_tables = true
 
-		
+func write_to_hex(table, index):	#convert and merge hex array into hex string
+	
+	var i = quant_positions[index]	#position in hex string
+	var j = 0	#position in hex array
+	var end = i + 126
+	while i <= end && j < table.size():
+		hex[i] = table[j][0]
+		hex[i + 1] = table[j][1]
+		i += 2
+		j += 1
+
+func convert_to_hex():
+	
+	var curr_hex = ""
+	var i = 0
+	var arr = [PoolByteArray()]
+	
+	while i + 1 < hex.size():
+		curr_hex = "0x" + hex[i] + hex[i + 1]
+		arr.append(curr_hex.hex_to_int())
+		i += 2
+	return arr
+	
+
+func write_file(quantization_tables):
+	for i in range(quantization_tables.size()):
+		write_to_hex(quantization_tables[i], i)
+	
+	var f = File.new()
+	f.open(jpg_file, File.WRITE)
+	
+	var pool_byte = convert_to_hex()
+	f.store_buffer(pool_byte)
 
 func open_file():
 	var f = File.new()
 	
-	f.open(jpg_file, File.READ_WRITE)
+	f.open(jpg_file, File.READ)
 	
 	var content = f.get_buffer(f.get_len())
 	
