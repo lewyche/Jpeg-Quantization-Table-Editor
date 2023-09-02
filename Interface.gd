@@ -1,6 +1,6 @@
 extends Control
 
-var jpg_file = "res://sogay(1).jpg"		#TODO: change this later
+var jpg_file = "res://lenin(1).jpeg"		#TODO: change this later
 
 var hex = ""
 

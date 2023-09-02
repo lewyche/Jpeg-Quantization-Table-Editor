@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sogay.jpg-64581f7740458bfe282b46d5f0e53768.stex"
+path="res://.import/lenin(1).jpeg-5f6c081d104e1af2875ffc4b7d95a6be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sogay.jpg"
-dest_files=[ "res://.import/sogay.jpg-64581f7740458bfe282b46d5f0e53768.stex" ]
+source_file="res://lenin(1).jpeg"
+dest_files=[ "res://.import/lenin(1).jpeg-5f6c081d104e1af2875ffc4b7d95a6be.stex" ]
 
 [params]
 

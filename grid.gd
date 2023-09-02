@@ -37,6 +37,3 @@ func _on_next_pressed():
 func _on_save_pressed():
 	interface.write_file(quantization_tables)
 
-
-func _on_lenim_pressed():
-	texture.import_lenin()

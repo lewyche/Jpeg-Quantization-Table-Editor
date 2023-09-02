@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Interface.gd" type="Script" id=1]
 [ext_resource path="res://grid.gd" type="Script" id=2]
-[ext_resource path="res://sogay(1).jpg" type="Texture" id=3]
+[ext_resource path="res://lenin(1).jpeg" type="Texture" id=3]
 [ext_resource path="res://LineEdit.tscn" type="PackedScene" id=4]
 [ext_resource path="res://TextureRect.gd" type="Script" id=5]
 
@@ -46,14 +46,8 @@ margin_right = 184.0
 margin_bottom = 20.0
 text = "Save"
 
-[node name="lenim" type="Button" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_left = 188.0
-margin_right = 240.0
-margin_bottom = 20.0
-text = "Lenim"
-
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer/HBoxContainer"]
-margin_left = 244.0
+margin_left = 188.0
 margin_right = 492.0
 margin_bottom = 20.0
 size_flags_horizontal = 3
@@ -428,6 +422,7 @@ margin_left = 496.0
 margin_right = 1019.0
 margin_bottom = 599.0
 size_flags_horizontal = 3
+size_flags_vertical = 3
 texture = ExtResource( 3 )
 expand = true
 script = ExtResource( 5 )
@@ -435,4 +430,3 @@ script = ExtResource( 5 )
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/back" to="HBoxContainer/VBoxContainer/grid" method="_on_back_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/next" to="HBoxContainer/VBoxContainer/grid" method="_on_next_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/save" to="HBoxContainer/VBoxContainer/grid" method="_on_save_pressed"]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/lenim" to="HBoxContainer/VBoxContainer/grid" method="_on_lenim_pressed"]
