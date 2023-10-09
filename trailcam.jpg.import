@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lenin.jpeg-ca472e92e3445eab221496c44812d418.stex"
+path="res://.import/trailcam.jpg-d51d99deb86d14dbf24cec554ca2a400.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://lenin.jpeg"
-dest_files=[ "res://.import/lenin.jpeg-ca472e92e3445eab221496c44812d418.stex" ]
+source_file="res://trailcam.jpg"
+dest_files=[ "res://.import/trailcam.jpg-d51d99deb86d14dbf24cec554ca2a400.stex" ]
 
 [params]
 

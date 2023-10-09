@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Interface.gd" type="Script" id=1]
 [ext_resource path="res://grid.gd" type="Script" id=2]
-[ext_resource path="res://lenin(1).jpeg" type="Texture" id=3]
+[ext_resource path="res://trailcam.jpg" type="Texture" id=3]
 [ext_resource path="res://LineEdit.tscn" type="PackedScene" id=4]
 [ext_resource path="res://TextureRect.gd" type="Script" id=5]
 
