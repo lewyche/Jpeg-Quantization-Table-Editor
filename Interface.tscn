@@ -425,6 +425,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 texture = ExtResource( 3 )
 expand = true
+stretch_mode = 5
 script = ExtResource( 5 )
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/HBoxContainer/back" to="HBoxContainer/VBoxContainer/grid" method="_on_back_pressed"]
