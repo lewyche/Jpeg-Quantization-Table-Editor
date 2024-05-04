@@ -18,8 +18,8 @@ func process_bytes(byte_array):
 	
 	var restart_interval = false
 	var curr_hex = ""
-	#while not iterated to restart interval, which starts at the end of the quantization table
 	
+	#while not iterated to restart interval, which starts at the end of the quantization table
 	var quantization_tables = []
 	
 	var i = 0
@@ -81,8 +81,6 @@ func convert_to_hex():
 		arr.append(curr_hex.hex_to_int())
 		i += 2
 	return arr
-
-
 
 func write_file(quantization_tables):
 	for i in range(quantization_tables.size()):
